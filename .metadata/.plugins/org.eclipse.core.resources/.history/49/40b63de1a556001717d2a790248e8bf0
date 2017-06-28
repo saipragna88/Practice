@@ -1,0 +1,10 @@
+package seleniumPractice;
+
+public class FileUploadAutoIT extends BrowserLaunch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package testngPackage;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+import org.testng.Reporter;
+
+@Test
+public class ReporterEg {
+	
+	public void testReport()
+	{
+		WebDriver driver=new FirefoxDriver();
+		Reporter
+		driver.manage().window().maximize();
+		
+		driver.get("http://google.com");
+		
+	}
+
+}

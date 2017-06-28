@@ -1,0 +1,16 @@
+package seleniumPractice;
+
+import org.openqa.selenium.By;
+
+public class MultipleWindowHandling extends BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		launchApp("firefox", "http://demoqa.com/frames-and-windows/");
+		System.out.println(driver.getWindowHandle());
+		
+		driver.findElement(By.linkText("New Browser Tab")).click();
+		System.out.println(driver.getWindowHandle());
+	}
+
+}

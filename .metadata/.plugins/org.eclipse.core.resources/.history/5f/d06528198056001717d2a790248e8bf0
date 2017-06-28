@@ -1,0 +1,14 @@
+package seleniumPractice;
+
+import org.openqa.selenium.By;
+
+public class ExplicitWait extends BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		launchApp("firefox","http://24hourfitness.com");
+		
+		driver.findElement(By.linkText("Get Started")).click();
+	}
+
+}

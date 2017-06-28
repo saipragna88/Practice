@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="TestSuite" parallel="tests">
+<parameter name="uid" value="guru99"></parameter>
+<parameter name="password" value="guru99"></parameter>
+  <test name="FirefoxTest">
+  	<parameter name="browser" value="Firefox"></parameter>
+  	<classes>
+  		<class name="CrossBrowserTesting.CrossBr"></class>
+  	</classes>
+  </test> <!-- Test -->
+  <test name="ChromeTest">
+  	<parameter name="browser" value="Chrome"></parameter>
+  	<classes>
+  	 	<class name="CrossBrowserTesting.CrossBr"></class>
+  	</classes>
+  </test>
+</suite> <!-- TestSuite -->

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<test name="testgroup">	
+	<groups>
+		<run>
+			<include name="smoke"></include>
+			<exclude name="regression"></exclude>
+		</run>
+	</groups>
+	<classes>
+		<class name="testngPackage.TestGroupDemo"></class>
+	</classes>
+</test>
+<!--
+  <test name="firefoxTest">
+    <classes>
+      <class name="testngPackage.CrossBrowserTesting"/>
+      <parameter name="browser" value="firefox"></parameter>
+    </classes>
+  </test> 
+  <test name="chromeTest">
+    <classes>
+      <class name="testngPackage.CrossBrowserTesting"/>
+      <parameter name="browser" value="chrome"></parameter>
+    </classes>
+  </test> 
+  <test name="ieTest">
+    <classes>
+      <class name="testngPackage.CrossBrowserTesting"/>
+      <parameter name="browser" value="ie"></parameter>
+    </classes>
+  </test> 
+  -->
+</suite> <!-- Suite -->

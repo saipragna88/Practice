@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9472" started-at="2017-06-07T19:19:10Z" finished-at="2017-06-07T19:19:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9472" started-at="2017-06-07T19:19:10Z" finished-at="2017-06-07T19:19:19Z">
+      <class name="com.mvnselenium.testng">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.mvnselenium.testng@14acaea5]" name="launch" duration-ms="9445" started-at="2017-06-07T15:19:10Z" finished-at="2017-06-07T15:19:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+      </class> <!-- com.mvnselenium.testng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

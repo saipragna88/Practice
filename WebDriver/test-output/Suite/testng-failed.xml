@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="lName" value="Tu"/>
+  <parameter name="fName" value="Sara"/>
+  <parameter name="uname" value="Admin"/>
+  <parameter name="eName" value="Saral Tu"/>
+  <parameter name="pswd" value="SaralTu12345"/>
+  <parameter name="cpswd" value="SaralTu12345"/>
+  <parameter name="uName" value="SaralTu12345"/>
+  <parameter name="pwd" value="admin"/>
+  <parameter name="url" value="http://opensource.demo.orangehrmlive.com"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="testng.UserReg">
+        <methods>
+          <include name="UserRegistration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testng.UserReg -->
+      <class name="testng.EmpReg">
+        <methods>
+          <include name="Logout"/>
+          <include name="Launch"/>
+          <include name="Close"/>
+          <include name="Login"/>
+        </methods>
+      </class> <!-- testng.EmpReg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

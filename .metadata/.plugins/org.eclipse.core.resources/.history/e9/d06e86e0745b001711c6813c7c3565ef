@@ -1,0 +1,21 @@
+package com.javacodegeeks.junit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class FirstDayAtSchoolTest {
+
+	FirstDayAtSchool obj=new FirstDayAtSchool();
+	
+	@Test
+	public void testPrepareMyBag() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testAddPencils() {
+		fail("Not yet implemented");
+	}
+
+}

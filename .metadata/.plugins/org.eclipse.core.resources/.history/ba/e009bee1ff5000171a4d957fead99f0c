@@ -1,0 +1,16 @@
+package javaPractice;
+
+public class InheritanceDemo extends Overloading{
+
+	public void multiply(int a, int b)
+	{
+		System.out.println(a+"*"+b+"="+(a*b));
+	}
+	public static void main(String[] args) {
+		InheritanceDemo iobj=new InheritanceDemo();
+		iobj.sum(20, 30);
+		iobj.sum(20, 30, 40);
+		iobj.multiply(20, 30);
+	}
+
+}

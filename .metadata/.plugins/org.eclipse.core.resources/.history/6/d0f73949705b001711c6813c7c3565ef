@@ -1,0 +1,36 @@
+package junitpackage;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+
+public class Annotations {
+	
+	@BeforeClass
+	public void onceExecutedBeforeAll()
+	{
+		System.out.println("@BeforeClass:onceExecutedBeforeAll");
+	}
+	
+	@Before
+	public void onceExecutedBeforeEach()
+	{
+		System.out.println("@Before:onceExecutedBeforeEach");
+	}
+	
+	@After
+	public void onceExecutedAfterEach()
+	{
+		System.out.println("@After:onceExecutedAfterEach");
+	}
+	
+	@AfterClass
+	public void onceExecutedAfterAll()
+	{
+		System.out.println("@AfterClass:onceExecutedAfterAll");
+	}
+	
+	
+
+}

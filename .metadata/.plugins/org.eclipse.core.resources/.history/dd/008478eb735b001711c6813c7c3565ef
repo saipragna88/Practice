@@ -1,0 +1,24 @@
+package com.javacodegeeks.junit;
+
+public class FirstDayAtSchool {
+
+	public String[] prepareMyBag()
+	{
+		String[] schoolBag={"Books","Pens","Notebooks"};
+		System.out.println("Schoolbag contains "+schoolBag.toString());
+		return schoolBag;
+	}
+	
+	public String[] addPencils()
+	{
+		String[] schoolBag={"Books","Pens","Notebooks","Pencils"};
+		System.out.println("Now schoolbag contains "+schoolBag.toString());
+		return schoolBag;
+	}
+	
+	public static void main(String[] args) {
+		FirstDayAtSchool s=new FirstDayAtSchool();
+		s.prepareMyBag();
+		s.addPencils();
+	}
+}

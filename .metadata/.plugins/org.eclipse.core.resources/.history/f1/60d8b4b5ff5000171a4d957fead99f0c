@@ -1,0 +1,11 @@
+package javaPractice;
+
+public class InheritanceDemo extends Overloading{
+
+	public static void main(String[] args) {
+		InheritanceDemo iobj=new InheritanceDemo();
+		iobj.sum(20, 30);
+		iobj.sum(20, 30, 40);
+	}
+
+}

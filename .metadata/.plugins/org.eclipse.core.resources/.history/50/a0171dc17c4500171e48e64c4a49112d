@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="url" value="http://opensource.demo.orangehrmlive.com"></parameter>
+    <parameter name="uname" value="Admin"></parameter>
+    <parameter name="pwd" value="admin"></parameter>
+    <parameter name="fName" value="Sara"></parameter>
+    <parameter name="lName" value="Tu"></parameter>
+    <parameter name="eName" value="Sara Tu"></parameter>
+    <parameter name="uName" value="SaraTu12345"></parameter>
+    <parameter name="pswd" value="SaraTu12345"></parameter>
+    <parameter name="cpswd" value="SaraTu12345"></parameter>
+  <test name="Test">
+    <classes>
+      <class name="testng.EmpReg"/>
+      <class name="testng.UserReg"/>
+      
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

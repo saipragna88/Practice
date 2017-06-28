@@ -1,0 +1,21 @@
+package seleniumPractice;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class DragDrop extends BrowserLaunch {
+
+	public static void main(String[] args) {
+		launchApp("firefox", "http://jqueryui.com/droppable/");
+		driver.switchTo().frame(0);
+		WebElement drag=driver.findElement(By.id("draggable"));
+		WebElement drop=driver.findElement(By.id("droppable"));
+		Actions act=new Actions(driver);
+		act.dragAndDrop(drag, drop).build().perform();
+		
+		
+
+	}
+
+}

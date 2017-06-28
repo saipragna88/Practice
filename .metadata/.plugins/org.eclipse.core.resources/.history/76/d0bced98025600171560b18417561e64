@@ -1,0 +1,34 @@
+package seleniumPractice;
+
+import org.openqa.selenium.By;
+
+public class Calendar extends BrowserLaunch {
+
+	public static void main(String[] args) {
+		
+		launchApp("firefox", "https://www.cleartrip.com/");
+		String date="02/september/2018";
+		String[] dateArr=date.split("/");
+		String day=dateArr[0];
+		String month=dateArr[1];
+		String year=dateArr[2];
+		driver.findElement(By.id("DepartDate")).click();
+		
+		String calyear=driver.findElement(By.className("ui-datepicker-year")).getText();
+		while(!calyear.equals(year))
+		{
+			driver.findElement(By.className("nextMonth")).click();
+			calyear=driver.findElement(By.className("ui-datepicker-year")).getText();
+		}
+		
+		String calmonth=driver.findElement(By.className("ui-datepicker-month")).getText();
+		while(!month.equals(calmonth))
+		{
+			driver.findElement(By.className("nextMonth")).click();
+			calmonth=driver.findElement(By.className("ui-datepicker-month")).getText();
+		}
+		
+
+	}
+
+}

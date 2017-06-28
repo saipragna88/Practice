@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="url" value="http://opensource.demo.orangehrmlive.com/"></parameter>
+<parameter name="uname" value="Admin"></parameter>
+<parameter name="pwd" value="admin"></parameter>
+  <test name="TestngDataprovider">
+  <classes>
+  <class name="testngDataprovider.EmpReg"></class>
+  </classes>
+  </test> <!-- TestngDataprovider -->
+</suite> <!-- Suite -->

@@ -1,0 +1,25 @@
+package com.javacodegeeks.junit;
+
+import static org.junit.Assert.*;
+
+
+import org.junit.Test;
+
+
+public class FirstDayAtSchoolTest {
+
+	FirstDayAtSchool obj=new FirstDayAtSchool();
+	String[] bag1={"Books", "Pens", "Notebooks"};
+	String[] bag2={"Books", "Pens", "Notebooks","Pencils"};
+	@Test
+	public void testPrepareMyBag() {
+		assertArrayEquals(bag1, obj.prepareMyBag());
+	}
+
+	
+	@Test
+	public void testAddPencils() {
+		assertArrayEquals(bag2, obj.addPencils());
+	}
+
+}
